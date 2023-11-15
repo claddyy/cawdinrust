@@ -16,7 +16,7 @@ fn main() {
             Err(_) => continue,
         };
 
-        println!("You guessed: ${guess}");
+        println!("Your bro guessed: ${guess}");
 
         match guess.cmp(&secret_no) {
             Ordering::Less => println!("Too small"),
