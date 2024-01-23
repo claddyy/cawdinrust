@@ -1,1 +1,1 @@
-/home/claddy/doc/cawdinrust/nubconcepts/target/debug/nubconcepts: /home/claddy/doc/cawdinrust/nubconcepts/src/main.rs
+/home/claddy/wr/cawdinrust/nubconcepts/target/debug/nubconcepts: /home/claddy/wr/cawdinrust/nubconcepts/src/main.rs
