@@ -1,0 +1,10 @@
+# .gitignore
+guessing_game/target/
+guessing_game/Cargo.lock
+guessing_game/.env
+guessing_game/*.log
+nubconcepts/target/
+nubconcepts/Cargo.lock
+nubconcepts/.env
+nubconcepts/*.log
+
