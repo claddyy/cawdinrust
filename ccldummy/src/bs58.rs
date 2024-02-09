@@ -1,10 +1,7 @@
-fn main() {
-    let bytes = base58_decode("tprv8ZgxMBicQKsPdisufuN1WwxfQGPpBAm9DD11kyTANuq8LDBh6nGFj1kaddVP5U9if6LypPkdnUkuxLMUFkEyMNDSreXx12hxJC6WsboYbbs");
-    println!("{:?}", bytes);
-}
+use bs58::decode;
 
-fn base58_decode(base58_string: &str) -> Vec<u8> {
-    let mut decoded_bytes = bs58::decode(base58_string).into_vec().expect("Invalid base58 string");
+pub fn base58_decode(base58_string: &str) -> Vec<u8> {
+    let mut decoded_bytes = decode(base58_string).into_vec().expect("Invalid base58 string");
     decoded_bytes.truncate(decoded_bytes.len() - 4);
     decoded_bytes
     // BONUS points for verifying checksum
