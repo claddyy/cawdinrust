@@ -5,7 +5,7 @@ pub struct ExKey {
     finger_print: [u8; 4],
     child_number: [u8; 4],
     chaincode: [u8; 32],
-    key: [u8; 33],
+    pub(crate) key: [u8; 33],
 }
 
 pub fn deserialize_key(bytes: &[u8]) -> ExKey {
