@@ -1,10 +1,10 @@
 #[derive(Debug)]
 pub struct ExKey {
-    version: [u8; 4],
-    depth: [u8; 1],
-    finger_print: [u8; 4],
-    child_number: [u8; 4],
-    chaincode: [u8; 32],
+    pub(crate) version: [u8; 4],
+    pub(crate) depth: [u8; 1],
+    pub(crate) finger_print: [u8; 4],
+    pub(crate) child_number: [u8; 4],
+    pub(crate) chaincode: [u8; 32],
     pub(crate) key: [u8; 33],
 }
 
@@ -41,7 +41,7 @@ pub fn deserialize_key(bytes: &[u8]) -> ExKey {
     child_number: [0, 0, 0, 0],
     chaincode: [85, 90, 211, 2, 233, 209, 154, 232, 184, 15, 3, 131, 254, 37, 70, 241, 135, 236, 101, 13, 105, 123, 241, 137, 167, 129, 177, 85, 47, 102, 96, 17],
     key: [0, 19, 2, 24, 138, 40, 68, 201, 112, 206, 236, 197, 132, 119, 87, 153, 200, 211, 253, 231, 239, 41, 69, 46, 229, 239, 252, 100, 131, 1, 121, 55, 96] }
- */
+*/
 
 /* Deserialize the extended pubkey bytes and return a ExKey object
 Bip32 Serialization format: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#serialization-format

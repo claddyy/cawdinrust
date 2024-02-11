@@ -7,4 +7,7 @@ nubconcepts/target/
 nubconcepts/Cargo.lock
 nubconcepts/.env
 nubconcepts/*.log
-
+ccldummy/target/
+ccldummy/Cargo.lock
+ccldummy/.env
+ccldummy/*.log
